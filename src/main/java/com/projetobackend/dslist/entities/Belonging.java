@@ -11,7 +11,7 @@ import java.util.Objects;
 public class Belonging {
 
     @EmbeddedId
-    private BelongingPK id; //*Primary key* do relacionamento entre Game, GameList e Belonging
+    private BelongingPK id = new BelongingPK(); //*Primary key* do relacionamento entre Game, GameList e Belonging
     private Integer position;
 
     public Belonging(){
